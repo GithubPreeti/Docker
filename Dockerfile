@@ -1,4 +1,7 @@
-FROM git Docker/735f80812f90
-ADD DockerContainer /var/www/html/
+FROM ubuntu:latest
+RUN apt-get update
+RUN apt-get install -y apache2 && apt-get clean
+EXPOSE 80
 CMD apachectl -D FOREGROUND
-RUN rm var/www/html/index.html
+RUN rm -f var/www/html/index.html
+COPY DockerContainer /var/www/html/
