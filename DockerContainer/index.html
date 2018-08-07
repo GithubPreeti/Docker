@@ -3,6 +3,17 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Welcome to Login Page</title>
+	<script type="text/javascript">
+function checkLoginResult()
+{
+	var user = document.getElementById("user").value;
+	var password = document.getElementById("pwd").value;
+	if(user = "Preeti" && password = "Password")
+		{
+		document.getElementById("result").value = "Login Succeeded";
+		}
+	}
+</script>
 </head>
 <body>
 <table width="20%" bgcolor="0099CC" align="center">
@@ -27,16 +38,4 @@
 </table>
 
 </body>
-
-<script type="text/javascript">
-function checkLoginResult()
-{
-	var user = document.getElementById("user").value;
-	var password = document.getElementById("pwd").value;
-	if(user = "Preeti" && password = "Password")
-		{
-		document.getElementById("result").value = "Login Succeeded";
-		}
-	}
-</script>
 </html>
