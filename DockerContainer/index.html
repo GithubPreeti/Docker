@@ -16,26 +16,18 @@ function checkLoginResult()
 </script>
 </head>
 <body>
-<table width="20%" bgcolor="0099CC" align="center">
+<form>
+Username:
+<input type="text" size=25 id ="user" name="user">
+	<br></br>
+Password:
+input type="Password" size=25 id="pwd" name="pwd">
+	<br></br>
 
-<tr>
-<td>Username:</td>
-<td><input type="text" size=25 id ="user" name="user"></td>
-</tr>
-
-<tr>
-<td>Password:</td>
-<td><input type="Password" size=25 id="pwd" name="pwd"></td>
-</tr>
-
-<tr>
-<td><input type="button" onclick="checkLoginResult()" value="Login" name="click"></td>
-</tr>
-<tr></tr>
-<tr>
-<td><input type="text" size=25 name="result"></td>
-</tr>
-</table>
+<input type="button" onclick="checkLoginResult()" value="Login" name="click">
+	<br></br>
+	<input type="text" size=25 name="result"></td>
+</form>
 
 </body>
 </html>
