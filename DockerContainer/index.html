@@ -17,16 +17,20 @@ function checkLoginResult()
 </head>
 <body>
 <form>
+<form>
+<table>
+<tr>
 Username:
-<input type="text" size=25 id ="user" name="user">
+<input type="text" size=25 id ="user" name="user"></tr>
 	<br></br>
-Password:
-<input type="Password" size=25 id="pwd" name="pwd">
+<tr>Password:
+<input type="Password" size=25 id="pwd" name="pwd"></tr>
 	<br></br>
 
-<input type="button" onclick="checkLoginResult()" value="Login" name="click">
+<tr><input type="button" onclick="checkLoginResult()" value="Login" name="click"></tr>
 	<br></br>
-	<input type="text" size=25 name="result">
+	<tr><input type="text" size=25 name="result"></tr>
+	</table>
 </form>
 
 </body>
